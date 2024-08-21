@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<title>YakuzaVision</title>
+
+<style type = "text/css">
+	*{padding : 0;
+	  margin : 0 ;
+	  box-sizing: border-box;}
+	header{width :100%;
+		height : 100vh;
+		background :linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)), 
+		            url("WallpaperDog-17267540.jpg");
+		background-size : cover;}
+	nav{
+		width: 100%;
+		height: 100px;
+		
+		color:white;
+		display : flex;
+		justify-content: space-around;
+		align-items: center;
+    }
+	.logo{
+		font-size: 2em;
+		letter-spacing: 2px;
+	}
+	.menu a{
+		text-decoration: none;
+		color: white;
+		padding: 10px 20px;
+		font-size: 20px;
+		position: relative;
+	}
+	.menu a:before{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 0%;
+		height: 100%;
+		border-bottom: 2px solid rgba(56, 157, 216, 0.799);
+		transition: 0.4s linear;
+	}
+	.menu a:hover:before{
+		width: 99%;
+	}
+
+
+	.register a{
+		text-decoration: none;
+		color: white;
+		padding: 10px 20px;
+		font-size: 20px;
+		background: rgba(56, 157, 216, 0.799);
+		border-radius: 2px;
+		transition: 0.6s;
+	}
+	.register a:hover{
+		background: transparent;
+		border: 1px solid rgb(56, 157, 216, 0.799);
+		color:rgb(56, 157, 216, 0.799);
+
+	}
+	.h-txt{
+		max-width: 650px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		text-align: center;
+		color: white;
+		letter-spacing: 2px;
+	}
+	.h-txt span{
+		letter-spacing: 7px;
+	}
+	.h-txt h1{
+		font-size: 3.5em;
+	}
+	.h-txt a{
+		text-decoration: none;
+		background: rgba(251, 122, 42, 0.885);
+		color: white;
+		padding: 10px 20px;
+		font-size: 20px;
+		border-radius: 2px;
+		transition: 0.6s;
+	}
+	.h-txt a:hover{
+		background: transparent;
+		border: 1px solid rgb(251, 122, 42, 0.885);
+		color:rgb(251, 122, 42, 0.885);
+	}
+	
+</style>
+</head>
+<body>
+<header>
+
+	<nav>
+		<div class="logo">
+			YakuzaVision
+		</div>
+		<div class="menu">
+			<a href="#">Home</a>
+			<a href="#">GPUs</a>
+			<a href="#">CPUs</a>
+			<a href="#">RAMs</a>
+			<a href="#">Fans</a>
+		
+		</div>
+		<div class="register">&nbsp;
+			<a href="#">Register</a>
+		</div>
+	</nav>
+	<section class="h-txt">
+		<span> -BUILD- </span>
+		<h1>YOUR DREAM MACHINE</h1>
+		<br>
+		<a href="#">CUSTOMISE NOW</a>
+		<br>
+	</section>
+</header>
+	
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Effect</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow-x: hidden;
+            font-family: Arial, sans-serif;
+        }
+
+        .parallax {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .parallax-layer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .content {
+            padding: 20px;
+            background-color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="parallax">
+        <div class="parallax-layer" style="background-image: url('WallpaperDog-17267540.jpg'); z-index: 1;"></div>=
+
+        <div class="parallax-layer" style="background-image: url('WallpaperDog-20489708.jpg'); z-index: 2; transform: translateZ(-1px) scale(1);"></div>
+    </div>
+   
+       
+</body>
+</html>

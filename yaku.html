@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Yakuuza Vision</title>
+  <style>
+    body, html{
+        height: 100%;
+        margin: 0 ;
+        font: 400 15px/1.8 "Lato", sans-serif;
+        color :#777
+    }
+
+    .bgimg1, .bgimg2, .bgimg3 {
+
+        position: relative ; 
+        opacity: 0.9;
+        background-attachment: fixed;
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    .bgimg1 {
+        background-image: url(main\ img.jpeg);
+        min-height: 100%;
+    }
+
+    /* FOR NAV BAR AND HOMEPAGE */
+
+    .logo{
+		font-size: 2em;
+		letter-spacing: 2px;
+	}
+	.menu a{
+		text-decoration: none;
+		color: white;
+		padding: 10px 20px;
+		font-size: 20px;
+		position: relative;
+	}
+	.menu a:before{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 0%;
+		height: 100%;
+		border-bottom: 2px solid rgba(56, 157, 216, 0.799);
+		transition: 0.4s linear;
+	}
+	.menu a:hover:before{
+		width: 99%;
+	}
+
+
+	.register a{
+		text-decoration: none;
+		color: white;
+		padding: 10px 20px;
+		font-size: 20px;
+		background: rgba(56, 157, 216, 0.799);
+		border-radius: 2px;
+		transition: 0.6s;
+	}
+	.register a:hover{
+		background: transparent;
+		border: 1px solid rgb(56, 157, 216, 0.799);
+		color:rgb(56, 157, 216, 0.799);
+
+	}
+	.h-txt{
+		max-width: 650px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		text-align: center;
+		color: white;
+		letter-spacing: 2px;
+	}
+	.h-txt span{
+		letter-spacing: 7px;
+		color:rgb(251, 122, 42, 0.885);
+	}
+	.h-txt h1{
+		font-size: 3.5em;
+	}
+	.h-txt a{
+		text-decoration: none;
+		background: rgba(251, 122, 42, 0.885);
+		color: white;
+		padding: 10px 20px;
+		font-size: 20px;
+		border-radius: 2px;
+		transition: 0.6s;
+	}
+	.h-txt a:hover{
+		background: transparent;
+		border: 1px solid rgb(251, 122, 42, 0.885);
+		color:rgb(251, 122, 42, 0.885);
+	}
+
+    /* ................................. */
+
+    .bgimg2{
+        background-image: url(blue_neon_glowing.jpg);
+        min-height: 400px;
+    }
+
+    .bgimg3{
+        background-image: url(wallpaper_blue.jpg);
+        min-height: 400px;
+
+    }
+
+    .caption{
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        text-align: center;
+        color : #000
+    }
+
+    .caption span.border{
+        background-color: #111;
+        color: #fff;
+        padding: 18px;
+        font-size :25px;
+        letter-spacing: 10px;
+    }
+
+    h3 {
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        font: 20px "Lato", sans-serif;
+        color : #111
+    }
+
+ 
+
+
+  </style>
+
+</head>
+<body>
+    <div class="bgimg1">
+        <header>
+            <nav>
+                <div class="logo">
+                    YakuzaVision
+                </div>
+                <div class="menu">
+                    <a href="#">Home</a>
+                    <a href="#">GPUs</a>
+                    <a href="#">CPUs</a>
+                    <a href="#">RAMs</a>
+                    <a href="#">Fans</a>
+            
+                </div>
+                <div class="register">&nbsp;
+                    <a href="#">Register</a>
+                </div>
+            </nav>
+            <section class="h-txt">
+                <span> -BUILD- </span>
+                <h1>YOUR DREAM MACHINE</h1>
+                <br>
+                <a href="#">CUSTOMISE NOW</a>
+                <br>
+            </section>
+        </header>    
+    </div>
+
+
+    <div style="color : #777;background-color:white;text-align:center;padding:50px 80px; text-align: justify;">
+        <h3 style="text-align: center;">Parallax demo</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio neque odit dolor? Impedit consequatur quisquam, laborum neque ex temporibus nemo ducimus labore. Molestias sunt, consequuntur soluta deserunt inventore quo porro?
+        </p>
+    </div>
+
+
+    <div class="bgimg2">
+        <div class="caption">
+            <span class="border" style = "background-color: transparent;font-size:25px; color:#f7f7f7">LESS HEIGHT</span>
+        </div>
+    </div>
+
+
+    <div style="position: relative;">
+       <div class="color : #ddd;background-color:#282E34;text-align:center;padding:50px 80px; text-align:justify">
+            <p>scroll up and down</p>
+       </div>
+    </div>
+
+
+    <div class="bgimg3">
+        <div class="caption">
+            <span class="border" style="background-color: transparent;font-size: 25px; color: #f7f7f7">SCROLL UP</span>
+        </div>
+    </div>
+
+
+    <div class="position:relative;">
+        <div style="color :#ddd;background-color: #282E34;text-align: center; padding: 50px 80px;text-align: justify;">
+            <p>
+                ..................................................................................
+            </p>
+        </div>
+    </div>
+
+
+    <div class="bgimg3">
+        <div class="caption">
+            <span class="border">COOL!</span>
+        </div>
+    </div>
+</body>
+</html>
+
+
+	
+</body>\
